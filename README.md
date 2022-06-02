@@ -45,5 +45,5 @@ docker context use pod1-ecs
 docker compose up
 ```
 - This will create a **AWS CloudFormation Stack**, which will deploy all the services to the **AWS Elastic Container Services**.
-![Risk-Assessment]([https://github.com/Balaji6701/MFPE-Final/blob/main/calculate_risk.jpg](https://github.com/Balaji6701/MFPE-Final/blob/main/cloud-formation.jpg))
+![Risk-Assessment](https://github.com/Balaji6701/MFPE-Final/blob/main/calculate_risk.jpg)
 
