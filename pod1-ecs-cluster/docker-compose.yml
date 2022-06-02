@@ -1,0 +1,62 @@
+version: '3.7'
+x-aws-vpc: "vpc-0a2b51e852012c199"
+services:
+  loan-management:
+    image: 421308774925.dkr.ecr.us-west-2.amazonaws.com/pod1_mfpe:latest
+    ports:
+      - "8080:8080"
+    networks:
+      - loan_network
+    depends_on:
+      - eureka-server
+    environment:
+      eureka.client.serviceUrl.defaultZone: http://eureka-server:8761/eureka
+  gateway:
+    image: 421308774925.dkr.ecr.us-west-2.amazonaws.com/pod1_mfpe_application_gateway:latest
+    ports:
+      - "8888:8888"
+    networks:
+      - loan_network
+    depends_on:
+      - eureka-server
+    environment:
+      eureka.client.serviceUrl.defaultZone: http://eureka-server:8761/eureka
+  auth-service:
+    image: 421308774925.dkr.ecr.us-west-2.amazonaws.com/pod1_mfpe_auth_service:latest
+    ports:
+      - "8081:8081"
+    networks:
+      - loan_network
+    depends_on:
+      - eureka-server
+    environment:
+      eureka.client.serviceUrl.defaultZone: http://eureka-server:8761/eureka
+  collateral-management:
+    image: 421308774925.dkr.ecr.us-west-2.amazonaws.com/pod1_mfpe_collateral_management:latest
+    ports:
+      - "8082:8082"
+    networks:
+      - loan_network
+    depends_on:
+      - eureka-server
+    environment:
+      eureka.client.serviceUrl.defaultZone: http://eureka-server:8761/eureka
+  risk-assessment:
+    image: 421308774925.dkr.ecr.us-west-2.amazonaws.com/pod1_mfpe_risk-assessment:latest
+    ports:
+      - "8083:8083"
+    networks:
+      - loan_network
+    depends_on:
+      - eureka-server
+    environment:
+      eureka.client.serviceUrl.defaultZone: http://eureka-server:8761/eureka
+
+  eureka-server:
+    image: 421308774925.dkr.ecr.us-west-2.amazonaws.com/pod1_mfpe_eureka-server:latest
+    ports:
+      - "8761:8761"
+    networks:
+      - loan_network
+networks:
+  loan_network:
