@@ -47,3 +47,5 @@ docker compose up
 - This will create a **AWS CloudFormation Stack**, which will deploy all the services to the **AWS Elastic Container Services**.
 ![Risk-Assessment](https://github.com/Balaji6701/MFPE-Final/blob/main/calculate_risk.jpg)
 
+## Static code analysis using SonarQube
+You can find the static code analysis report of the services [Here](https://github.com/Balaji6701/MFPE-Final/blob/main/sonarqube_report.pdf)
