@@ -34,7 +34,7 @@ The backend is fully powered by Java-Spring boot and front-end is made using Ang
 - Every service is commited to a **AWS Code-Commit** repository.
 - Every service has its own **AWS Code-Pipe** line to enable.
 - After build the services will be pushed to **AWS Elastic Container Registry** as docker images.
-- After the build of every service is successfull, Run the **docker-compose.yml** ![docker-compose.yml](https://github.com/Balaji6701/MFPE-Final/tree/main/pod1-ecs-cluster) file using following commands.
+- After the build of every service is successfull, Run the [docker-compose.yml](https://github.com/Balaji6701/MFPE-Final/tree/main/pod1-ecs-cluster) file using following commands.
 ### Prerequisite
 - Configure aws credential
 - Install aws cli version 2
