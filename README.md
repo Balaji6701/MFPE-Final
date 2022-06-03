@@ -5,7 +5,7 @@ Collateral Loans - Risk Assessment is a miroservice architecture based applicati
 The backend is fully powered by Java-Spring boot and front-end is made using Angular
 ## Requirements
 - Spring boot 2.7.0
-- Angular 12
+- Angular 13
 - Docker
 - PostMan desktop
 - Spring tool suite
