@@ -1,6 +1,6 @@
 # Collateral Loans – Risk Assessment
 ### MFPE
-![Login-Page](https://github.com/Balaji6701/MFPE-Final/blob/main/login-page.jpg)
+![Login-Page](https://github.com/Balaji6701/MFPE-Final/blob/main/home-page.jpg)
 Collateral Loans - Risk Assessment is a miroservice architecture based application powered by spring boot.
 The backend is fully powered by Java-Spring boot and front-end is made using Angular
 ## Requirements
@@ -26,6 +26,7 @@ The backend is fully powered by Java-Spring boot and front-end is made using Ang
 - Assess risks percentage for a particular Collateral.
 ![Risk-Assessment](https://github.com/Balaji6701/MFPE-Final/blob/main/calculate_risk.jpg)
 - Secured by **JWT** authorization using **Spring security**.
+![Login-Page](https://github.com/Balaji6701/MFPE-Final/blob/main/login-page.jpg)
 ![Risk-Assessment](https://github.com/Balaji6701/MFPE-Final/blob/main/token.jpg)
 - Microservice architecture.
 - Dockerized
@@ -49,3 +50,6 @@ docker compose up
 
 ## Static code analysis using SonarQube
 You can find the static code analysis report of the services [Here](https://github.com/Balaji6701/MFPE-Final/blob/main/sonarqube_report.pdf)
+
+## URLs
+You can find the url to every services [Here]((https://github.com/Balaji6701/MFPE-Final/blob/main/url.md)
