@@ -52,5 +52,5 @@ docker compose up
 You can find the static code analysis report of the services [Here](https://github.com/Balaji6701/MFPE-Final/blob/main/sonarqube_report.pdf)
 
 ## URLs
-You can find the url to every services [Here](https://github.com/Balaji6701/MFPE-Final/blob/main/url.md)
-Access front-end [Here](http://pod1-frontend-v2.s3-website-us-west-2.amazonaws.com/)
+- You can find the url to every services [Here](https://github.com/Balaji6701/MFPE-Final/blob/main/url.md)
+- Access front-end [Here](http://pod1-frontend-v2.s3-website-us-west-2.amazonaws.com/)
